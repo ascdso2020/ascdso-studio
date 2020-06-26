@@ -34,7 +34,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       if machine["ansible"] != nil
         box.vm.provision "ansible" do |ansible|
-            ansible.playbook = machine["ansible"] 
+            ansible.playbook = machine["ansible"]
             ansible.extra_vars = { ansible_python_interpreter:"/usr/bin/python3" }
             ansible.verbose = "vv"
         end
@@ -49,6 +49,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         end # end of gui
 
         vb.customize ["modifyvm", :id, "--groups", "/DevSecOps-Studio"]
+        vb.customize ["modifyvm", :id, "--vram", "256"]
+        vb.customize ["modifyvm", :id, "--graphicscontroller", "vboxsvga"]
 
       end # end of vb provider
     end # end of box
