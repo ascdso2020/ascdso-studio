@@ -1,40 +1,40 @@
 ---
-- name: DevSecOps-Box
+- name: DevSecOps-Box.local
   box: ubuntu/bionic64
   box_version: 20200407.0.0
   ram: 1024
   ip: 10.0.1.66
   ansible: "provisioning/devsecops-box.yml"
 
-- name: jenkins
+- name: jenkins.local
   box: ubuntu/bionic64
   box_version: 20200407.0.0
   ram: 1024
   ip: 10.0.1.11
   ansible: "provisioning/jenkins.yml"
 
-- name: gitlab
+- name: gitlab.local
   box: ubuntu/bionic64
   box_version: 20200407.0.0
   ram: 8192
   ip: 10.0.1.12
   ansible: "provisioning/gitlab.yml"
 
-- name: gitlab-runner
+- name: gitlab-runner.local
   box: ubuntu/bionic64
   box_version: 20200407.0.0
   ram: 1024
   ip: 10.0.1.22
   ansible: "provisioning/gitlab-runner.yml"
 
-- name: elk
+- name: elk.local
   box: ubuntu/bionic64
   box_version: 20200407.0.0
   ram: 1024
   ip: 10.0.1.23
   ansible: "provisioning/elk.yml"
 
-- name: vuln-management
+- name: vuln-management.local
   box: ubuntu/bionic64
   box_version: 20200407.0.0
   ram: 1024
@@ -42,7 +42,7 @@
   # ansible: "dojo.yml"
 
   # Includes registry docker, docker and docker compose installed.
-- name: prod
+- name: prod.local
   box: ubuntu/bionic64
   box_version: 20200407.0.0
   ram: 1024
