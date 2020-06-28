@@ -1,6 +1,6 @@
 ---
 # JDK version options include:
 #   - java
-#   - java-1.8.0-openjdk
+#   - openjdk-8-jdk
 __java_packages:
-  - java-1.8.0-openjdk
+  - openjdk-8-jdk

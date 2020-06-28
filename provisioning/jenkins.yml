@@ -6,7 +6,7 @@
 
   vars:
     java_packages:
-      - java-1.8.0-openjdk
+      - openjdk-8-jdk
     # host entries won't work in docker
     # see https://stackoverflow.com/questions/28327458/how-to-add-my-containers-hostname-to-etc-hostl
     add_host_entries: true

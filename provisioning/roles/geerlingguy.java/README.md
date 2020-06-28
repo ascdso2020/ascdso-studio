@@ -41,7 +41,7 @@ For RHEL / CentOS:
         - role: geerlingguy.java
           when: "ansible_os_family == 'RedHat'"
           java_packages:
-            - java-1.8.0-openjdk
+            - openjdk-8-jdk
 
 For Ubuntu < 16.04:
 

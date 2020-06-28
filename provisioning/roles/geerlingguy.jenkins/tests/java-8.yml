@@ -31,7 +31,7 @@
 - name: Set the java_packages variable (RedHat).
   set_fact:
     java_packages:
-      - java-1.8.0-openjdk
+      - openjdk-8-jdk
   when: ansible_os_family == 'RedHat'
 
 # Ubuntu.
