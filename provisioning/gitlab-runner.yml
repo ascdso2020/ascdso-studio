@@ -5,8 +5,8 @@
   become: yes
 
   vars:
-    gitlab_runner_registration_token: 'CtNi9vq-4yFazTLntDU-'
-    gitlab_runner_connect_enable: false
+    gitlab_runner_registration_token: '94vkzWmMfztXDCL6z8uq'
+    gitlab_runner_connect_enable: true
 
     # host entries won't work in docker
     # see https://stackoverflow.com/questions/28327458/how-to-add-my-containers-hostname-to-etc-hosts
