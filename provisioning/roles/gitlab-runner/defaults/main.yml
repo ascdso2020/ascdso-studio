@@ -25,7 +25,7 @@ gitlab_runner_registration_token: '94vkzWmMfztXDCL6z8uq'
 gitlab_runner_name: '{{ ansible_hostname }}'
 
 # Runner tags
-gitlab_runner_tags: [devsecops]
+gitlab_runner_tags: [shell,devsecops]
 
 # Directory where builds and caches will be stored in context of selected executor
 # (Locally, Docker, SSH)
@@ -37,7 +37,7 @@ gitlab_runner_docker_register_script: "gitlab-runner-docker-register.sh"
 
 gitlab_runner_docker_name: "docker-runner"
 gitlab_runner_docker_image: "docker:stable"
-gitlab_runner_docker_tags: [docker,]
+gitlab_runner_docker_tags: [docker,devsecops]
 
 
 docker_registry_hostname: gitlab.local
