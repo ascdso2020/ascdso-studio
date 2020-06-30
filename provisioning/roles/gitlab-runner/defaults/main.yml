@@ -9,14 +9,14 @@ gitlab_runner_concurrent: '{{ ansible_processor_cores }}'
 gitlab_runner_check_interval: 0
 
 # GitLab coordinator URL
-gitlab_runner_coordinator_url: 'https://gitlab.local/'
+gitlab_runner_coordinator_url: 'https://gitlab.local'
 
 gitlab_runner_connect_enable: true
 
 # Path to coordinator cert on local machine
 # Define this if you are using Self-Signed cert for gitlab
 # https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/configuration/tls-self-signed.md
-gitlab_runner_coordinator_cert_path: './etc/gitlab/certs/gitlab.local.crt'
+gitlab_runner_coordinator_cert_path: './etc/gitlab/ssl/gitlab.local.crt'
 
 # GitLab registration token, keep it empty if you dont want to register it
 gitlab_runner_registration_token: '94vkzWmMfztXDCL6z8uq'
