@@ -44,4 +44,4 @@
 
 - name: Register gitlab docker runner
   command: bash "/tmp/{{ gitlab_runner_docker_register_script }}"
-  when:  gitlab_runner_connect_enable and configured_runners.stderr.find("=docker") == -1 )
+  when:  gitlab_runner_connect_enable and (configured_runners.stderr.find("=docker") == -1 )
