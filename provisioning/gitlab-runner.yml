@@ -5,7 +5,7 @@
   become: yes
 
   vars:
-    gitlab_runner_registration_token: '94vkzWmMfztXDCL6z8uq'
+    gitlab_runner_registration_token: 'yELhP9tuJZtF7FQ3Qt3v'
     gitlab_runner_connect_enable: true
 
     # host entries won't work in docker
