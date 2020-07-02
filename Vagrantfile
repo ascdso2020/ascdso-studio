@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Enable shared folder, see https://superuser.com/questions/756758/is-it-possible-to-disable-default-vagrant-synced-folder
   # config.vm.synced_folder 'devsecops/', '/devsecops', type: "nfs", disabled: false
-  config.vm.synced_folder 'devsecops/', '/devsecops', disabled: false
+  config.vm.synced_folder '.', '/devsecops', type: 'virtualbox', disabled: false
 
   # Iterate through entries in YAML file
   machines.each do |machine|
