@@ -4,10 +4,10 @@
   hosts: all
   become: yes
 
-  - name: Install kubuntu-desktop package
-    apt:
-      name: kubuntu-desktop
-      state: present
+- name: Install xubuntu-desktop package
+  apt:
+    name: xubuntu-desktop
+    state: present
 
   vars:
     - elasticsearch_network_host: localhost
