@@ -4,6 +4,11 @@
   hosts: all
   become: yes
 
+- name: Install kubuntu-desktop package
+  apt:
+    name: kubuntu-desktop
+    state: present
+
   vars:
     java_packages:
       - openjdk-8-jdk

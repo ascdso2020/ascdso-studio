@@ -4,6 +4,11 @@
   hosts: all
   become: yes
 
+  - name: Install kubuntu-desktop package
+    apt:
+      name: kubuntu-desktop
+      state: present
+
   vars:
     - elasticsearch_network_host: localhost
     # host entries won't work in docker

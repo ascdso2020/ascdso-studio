@@ -4,6 +4,11 @@
   hosts: all
   become: yes
 
+- name: Install kubuntu-desktop package
+  apt:
+    name: kubuntu-desktop
+    state: present
+
   vars:
     gitlab_runner_registration_token: 'yELhP9tuJZtF7FQ3Qt3v'
     gitlab_runner_connect_enable: true

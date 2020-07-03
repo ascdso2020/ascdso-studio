@@ -1,10 +1,5 @@
 ---
 
-- name: Install ubuntu-desktop package
-  apt:
-    name: ubuntu-desktop
-    state: present
-
 - name: Install tree package
   apt:
     name: tree
