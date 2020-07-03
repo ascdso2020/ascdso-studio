@@ -3,11 +3,11 @@
 - name: Ubuntu desktop environment playbook
   hosts: localhost
   roles:
-    Common roles
+    # Common roles
      - { role: locales, become: true }
      - { role: common, become: true }
      - { role: java-openjdk, become: true }
-    Server roles
+    # Server roles
      - { role: awscli, become: false }
      - { role: docker, become: true }
      - { role: ecs-cli, become: true }
@@ -16,7 +16,7 @@
      - { role: python, become: true }
      - { role: ssh, become: true }
      - { role: ufw, become: true }
-    Desktop roles
+    # Desktop roles
      - { role: desktop, become: true }
      - { role: atom, become: true }
      - { role: chromium, become: true }
