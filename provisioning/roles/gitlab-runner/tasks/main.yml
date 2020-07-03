@@ -1,5 +1,5 @@
 ---
-
+    
 - name: Check if GitLab Runner /etc directory is created
   stat: path=/etc/gitlab-runner
   register: gitlab_config_dir

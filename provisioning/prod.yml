@@ -4,6 +4,11 @@
   hosts: all
   become: yes
 
+- name: Install xubuntu-desktop package
+  apt:
+    name: xubuntu-desktop
+    state: present
+
   vars:
     # host entries won't work in docker
     # see https://stackoverflow.com/questions/28327458/how-to-add-my-containers-hostname-to-etc-hosts

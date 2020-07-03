@@ -51,7 +51,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
         vb.customize ["modifyvm", :id, "--groups", "/DevSecOps-Studio"]
         vb.customize ["modifyvm", :id, "--vram", "256"]
-        vb.customize ["modifyvm", :id, "--graphicscontroller", "vmsvga"]
+        vb.customize ["modifyvm", :id, "--graphicscontroller", "vboxsvga"]
 
       end # end of vb provider
     end # end of box

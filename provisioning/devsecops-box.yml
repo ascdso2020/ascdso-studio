@@ -4,6 +4,11 @@
   hosts: all
   become: yes
 
+- name: Install ubuntu-desktop package
+    apt:
+      name: ubuntu-desktop
+      state: present
+
   vars:
 
     # host entries wont work in docker
