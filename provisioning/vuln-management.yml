@@ -4,9 +4,9 @@
   hosts: all
   become: yes
 
-- name: Install xubuntu-desktop package
+- name: Install ubuntu-studio package
   apt:
-    name: xubuntu-desktop
+    name: ubuntu-studio
     state: present
 
   vars:

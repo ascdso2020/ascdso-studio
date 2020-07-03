@@ -4,9 +4,9 @@
   hosts: all
   become: yes
 
-- name: Install kubuntu-desktop package
+- name: Install xubuntu-desktop package
   apt:
-    name: kubuntu-desktop
+    name: xubuntu-desktop
     state: present
 
 
