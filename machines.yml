@@ -1,42 +1,42 @@
 ---
 - name: DevSecOps-Box.local
   box: debian/buster64
-  box_version: v10.4.0
+  box_version: 10.4.0
   ram: 1024
   ip: 10.0.1.66
   ansible: "provisioning/devsecops-box.yml"
 
 - name: jenkins.local
   box: debian/buster64
-  box_version: v10.4.0
+  box_version: 10.4.0
   ram: 1024
   ip: 10.0.1.11
   ansible: "provisioning/jenkins.yml"
 
 - name: gitlab.local
   box: debian/buster64
-  box_version: v10.4.0
+  box_version: 10.4.0
   ram: 8192
   ip: 10.0.1.12
   ansible: "provisioning/gitlab.yml"
 
 - name: gitlab-runner.local
   box: debian/buster64
-  box_version: v10.4.0
+  box_version: 10.4.0
   ram: 1024
   ip: 10.0.1.22
   ansible: "provisioning/gitlab-runner.yml"
 
 - name: elk.local
   box: debian/buster64
-  box_version: v10.4.0
+  box_version: 10.4.0
   ram: 1024
   ip: 10.0.1.23
   ansible: "provisioning/elk.yml"
 
 - name: stage.local
   box: debian/buster64
-  box_version: v10.4.0
+  box_version: 10.4.0
   ram: 1024
   ip: 10.0.1.32
   # ansible: "dojo.yml"
@@ -44,7 +44,7 @@
   # Includes registry docker, docker and docker compose installed.
 - name: prod.local
   box: debian/buster64
-  box_version: v10.4.0
+  box_version: 10.4.0
   ram: 1024
   ip: 10.0.1.33
   ansible: "provisioning/prod.yml"
