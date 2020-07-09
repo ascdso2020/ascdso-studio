@@ -80,7 +80,7 @@ def test_files(host, file, content):
 @pytest.mark.parametrize('command, regex', [
   ("packer --version", "^1.5.5*"),
   ("terraform --version", "Terraform v0.12.24*"),
-  ("sudo su -c 'inspec --version' -l vagrant", "^4.18.104*")
+  ("sudo su -c 'inspec --version' -l vagrant", "^4.21.3*")
 ])
 def test_commands(host, command, regex):
     cmd = host.check_output(command)
