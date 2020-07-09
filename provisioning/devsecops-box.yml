@@ -4,11 +4,6 @@
   hosts: all
   become: yes
 
-- name: Install ubuntu-desktop package
-    apt:
-      name: ubuntu-desktop
-      state: present
-
   vars:
 
     # host entries wont work in docker
@@ -54,6 +49,11 @@
         version: 2.9.6
       - name: ansible-lint
         version: 4.2.0
+
+#- name: Install ubuntu-desktop package
+#  apt:
+#    name: ubuntu-desktop
+#    state: present
 
   roles:
     - common

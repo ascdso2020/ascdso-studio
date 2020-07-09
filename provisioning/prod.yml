@@ -4,11 +4,6 @@
   hosts: all
   become: yes
 
-- name: Install ubuntu-studio package
-  apt:
-    name: ubuntu-studio
-    state: present
-
   vars:
     # host entries won't work in docker
     # see https://stackoverflow.com/questions/28327458/how-to-add-my-containers-hostname-to-etc-hosts
@@ -27,6 +22,10 @@
     docker_apt_release_channel: stable
     docker_apt_repository: "deb https://download.docker.com/linux/{{ ansible_distribution|lower }} {{ ansible_distribution_release }} {{ docker_apt_release_channel }}"
 
+#- name: Install ubuntustudio-desktop package
+#  apt:
+#    name: ubuntustudio-desktop
+#    state: present
 
   roles:
     - common

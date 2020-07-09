@@ -4,16 +4,16 @@
   hosts: all
   become: yes
 
-- name: Install xubuntu-desktop package
-  apt:
-    name: xubuntu-desktop
-    state: present
-
   vars:
     - elasticsearch_network_host: localhost
     # host entries won't work in docker
     # see https://stackoverflow.com/questions/28327458/how-to-add-my-containers-hostname-to-etc-hosts
     - add_host_entries: true
+
+#- name: Install xubuntu-desktop package
+#  apt:
+#    name: xubuntu-desktop
+#    state: present
 
   roles:
     - common
