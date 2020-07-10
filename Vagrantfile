@@ -46,7 +46,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.memory = machine["ram"]
 
         if machine["gui"] != nil
-        	vb.gui = false
+        	vb.gui = true
         end # end of gui
 
         vb.customize ["modifyvm", :id, "--groups", "/DevSecOps-Studio"]
