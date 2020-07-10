@@ -1,6 +1,6 @@
 ---
 
-- name: Install gitlab server
+- name: Install gitlab envirnment
   hosts: all
   become: yes
 

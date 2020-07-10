@@ -1,6 +1,6 @@
 ---
 
-- name: Install ELK stack
+- name: Install ELK stack environment
   hosts: all
   become: yes
 

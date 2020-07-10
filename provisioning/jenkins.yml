@@ -1,6 +1,6 @@
 ---
 
-- name: Install Jenkins
+- name: Install Jenkins environment
   hosts: all
   become: yes
 

@@ -1,6 +1,6 @@
 ---
 
-- name: Install gitlab runner
+- name: Install gitlab runner environment
   hosts: all
   become: yes
 

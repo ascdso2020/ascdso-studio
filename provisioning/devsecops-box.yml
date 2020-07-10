@@ -1,6 +1,6 @@
 ---
 
-- name: Setup DevSecOps Environment
+- name: Setup DevSecOps environment
   hosts: all
   become: yes
 
