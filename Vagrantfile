@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.name = machine["name"]
         vb.memory = machine["ram"]
 
-        if machine["gui"] == nil
+        if machine["gui"] == true
         	vb.gui = true
         end # end of gui
 
