@@ -2,6 +2,7 @@
 - name: DevSecOps-Box.local
   box: debian/buster64
   box_version: 10.4.0
+  gui: true
   ram: 1024
   ip: 10.0.1.66
   ansible: "provisioning/devsecops-box.yml"
@@ -45,6 +46,7 @@
 - name: prod.local
   box: debian/buster64
   box_version: 10.4.0
+  gui: true
   ram: 1024
   ip: 10.0.1.33
   ansible: "provisioning/prod.yml"

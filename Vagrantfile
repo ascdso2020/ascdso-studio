@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.name = machine["name"]
         vb.memory = machine["ram"]
 
-        if machine["gui"] != nil
+        if machine["gui"] == nil
         	vb.gui = true
         end # end of gui
 
@@ -58,7 +58,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end # end of machines loop
 
   config.vm.provision "shell", inline: <<-SHELL
-    DEBIAN_FRONTEND=noninteractive apt-get install -y avahi-daemon libnss-mdns
+    DEBIAN_FRONTEND=noninteractive apt-get install -y avahi-daemon libnss-mdns net-tools gdm
   SHELL
 
 end # end of config
