@@ -1,13 +1,8 @@
 ---
 
-- name: Install Jenkins
+- name: Install Jenkins environment
   hosts: all
   become: yes
-
-- name: Install xubuntu-desktop package
-  apt:
-    name: xubuntu-desktop
-    state: present
 
   vars:
     java_packages:
@@ -76,6 +71,11 @@
       - name: ansible-lint
         version: 4.2.0
       - name: sslyze
+
+#- name: Install xubuntu-desktop package
+#  apt:
+#    name: xubuntu-desktop
+#    state: present
 
   roles:
     - common # need curl for rvm_io.ruby

@@ -3,5 +3,5 @@
 10.0.1.12 gitlab.local
 10.0.1.22 gitlab-runner.local
 10.0.1.23 elk.local
-10.0.1.32 vuln-management.local
+10.0.1.32 stage.local
 10.0.1.33 prod.local

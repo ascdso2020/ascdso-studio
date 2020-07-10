@@ -16,7 +16,7 @@
     ansible_python_interpreter: /usr/bin/python3
 
     # Inspec
-    inspec_version: "4.18.104"
+    inspec_version: "4.21.3"
 
     # Docker Community Edition
     docker_edition: 'ce'

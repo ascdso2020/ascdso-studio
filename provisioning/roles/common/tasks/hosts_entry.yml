@@ -13,6 +13,6 @@
     - { ip: 10.0.1.12, name: gitlab.local }
     - { ip: 10.0.1.22, name: gitlab-runner.local }
     - { ip: 10.0.1.23, name: elk.local }
-    - { ip: 10.0.1.32, name: vuln-management.local }
+    - { ip: 10.0.1.32, name: stage.local }
     - { ip: 10.0.1.33, name: prod.local }
   when: add_host_entries

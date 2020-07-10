@@ -1,6 +1,6 @@
 ---
 
-- name: Setup production environment
+- - name: Setup staging environment
   hosts: all
   become: yes
 
@@ -30,6 +30,6 @@
   roles:
     - common
     - geerlingguy.docker
-    - prod
+    - stage
   tags:
-    - prod
+    - stage

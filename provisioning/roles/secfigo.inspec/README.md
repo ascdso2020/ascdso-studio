@@ -12,7 +12,7 @@ None.
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    inspec_version: "4.18.104"
+    inspec_version: "4.21.3"
 
 The Packer version to install.
 
