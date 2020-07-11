@@ -11,20 +11,16 @@
     state: present
     update_cache: yes
 
-- name: Install NTP
-  apt:
-    package: ntp
-    state: present
-    tags: ntp
-    sudo: true
+# - name: Install NTP
+#  apt:
+#    package: ntp
+#    state: present
 
-- name: Make sure NTP is started up
-  service:
-    name: ntp
-    state: started
-    enabled: yes
-    tags: ntp
-    sudo: true
+#- name: Make sure NTP is started up
+#  service:
+#    name: ntp
+#    state: started
+#    enabled: yes
 
 # See https://www.pixelflush.com/blog/2013/03/29/fix-locale-setting-on-ubuntu-ec2-instances/
 - name: Configure Locale as en_US.UTF-8
