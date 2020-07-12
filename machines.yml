@@ -39,13 +39,14 @@
   ip: 10.0.1.23
   ansible: "provisioning/elk.yml"
 
+# Includes registry docker, docker and docker compose installed.
 - name: stage.local
   box: debian/buster64
   gui: true
   box_version: 10.4.0
   ram: 1024
   ip: 10.0.1.32
-  # ansible: "dojo.yml"
+  ansible: "provisioning/prod.yml"
 
   # Includes registry docker, docker and docker compose installed.
 - name: prod.local
