@@ -46,11 +46,6 @@
         version: 4.2.0
       - name: sslyze
 
-#- name: Install xubuntu-desktop package
-#  apt:
-#    name: xubuntu-desktop
-#    state: present
-
   roles:
     - common
     - geerlingguy.docker
