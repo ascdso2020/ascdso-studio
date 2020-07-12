@@ -15,4 +15,5 @@
   apt_repository:
     repo: 'deb https://artifacts.elastic.co/packages/{{ elasticsearch_version }}/apt stable main'
     state: present
-    # update_cache: true
+    filename: elastic-7.x.list
+    update_cache: no
