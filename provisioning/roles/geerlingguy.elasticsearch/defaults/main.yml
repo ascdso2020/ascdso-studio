@@ -1,6 +1,6 @@
 ---
 elasticsearch_version: '7.8'
-elasticsearch_package_state: present
+elasticsearch_package_state: latest
 
 elasticsearch_service_state: started
 elasticsearch_service_enabled: true

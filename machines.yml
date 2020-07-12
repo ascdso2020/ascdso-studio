@@ -19,7 +19,7 @@
   box: debian/buster64
   box_version: 10.4.0
   gui: false
-  ram: 8192
+  ram: 4096
   ip: 10.0.1.12
   ansible: "provisioning/gitlab.yml"
 
@@ -35,7 +35,7 @@
   box: debian/buster64
   box_version: 10.4.0
   gui: false
-  ram: 1024
+  ram: 4096
   ip: 10.0.1.23
   ansible: "provisioning/elk.yml"
 
