@@ -15,4 +15,4 @@
   apt_repository:
     repo: 'deb https://artifacts.elastic.co/packages/{{ elasticsearch_version }}/apt stable main'
     state: present
-    update_cache: true
+    # update_cache: true
