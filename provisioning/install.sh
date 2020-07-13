@@ -12,7 +12,7 @@ PACKER_VERSION="1.1.1"
 
 # install packages
 apt-get update
-apt-get -y install ansible unzip
+apt-get -y install ansible unzip software-properties-common
 
 # Docker installation
 apt-get -y install apt-transport-https ca-certificates curl software-properties-common
@@ -22,7 +22,7 @@ apt-get update
 apt-get -y install docker-ce
 
 # add docker privileges
-usermod -G docker vagrant 
+usermod -G docker vagrant
 
 # install pip
 pip install -U pip && pip3 install -U pip

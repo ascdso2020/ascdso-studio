@@ -5,7 +5,7 @@
   become: yes
 
   vars:
-    gitlab_runner_registration_token: 'yELhP9tuJZtF7FQ3Qt3v'
+    gitlab_runner_registration_token: 'juUc2uRzyQPusoTNmQbC'
     gitlab_runner_connect_enable: true
 
     # host entries won't work in docker
@@ -45,11 +45,6 @@
       - name: ansible-lint
         version: 4.2.0
       - name: sslyze
-
-#- name: Install xubuntu-desktop package
-#  apt:
-#    name: xubuntu-desktop
-#    state: present
 
   roles:
     - common

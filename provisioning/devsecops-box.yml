@@ -50,11 +50,6 @@
       - name: ansible-lint
         version: 4.2.0
 
-#- name: Install ubuntu-desktop package
-#  apt:
-#    name: ubuntu-desktop
-#    state: present
-
   roles:
     - common
     - geerlingguy.pip
