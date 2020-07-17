@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "This script will setup the initial environment required for DevSecOps Studio";
+echo "This script will setup the initial environment required for ascdso-studio";
 
 #variables
 ansible_repo="deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
@@ -40,7 +40,7 @@ function apps_install {
 }
 
 function devsecops-studio_setup {
-    echo "Setting up DevSecOps Studio";
+    echo "Setting up ascdso-studio";
     su -l $USERNAME -c "git clone $devsecops_studio_git ~/DevSecOps-Studio && ansible-galaxy install -r ~/DevSecOps-Studio/requirements.yml -p ~/DevSecOps-Studio/provisioning/roles &&  cd ~/DevSecOps-Studio/ && vagrant up";
 }
 
@@ -80,7 +80,7 @@ else
     exit -1
 fi
 
-#settingup of DevSecOps Studio
+#settingup of ascdso-studio
 dpkg -l git vagrant virtualbox ansible
 if [ $? -ne 0 ];then
     echo "Make sure Virtualbox, Vagrant, Ansilble & Git are installed"

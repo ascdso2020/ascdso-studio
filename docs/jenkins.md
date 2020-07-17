@@ -5,7 +5,7 @@ Once the vagrant setup is done, you can visit http://http://10.0.1.11:8080/
 1. You will be prompted to provide initial password. Follow the below setups to get the password
 	
 	```bash
-	# SSH into jenkins box, ensure you are DevSecOps Studio directory.
+	# SSH into jenkins box, ensure you are ascdso-studio directory.
 	$ vagrant ssh jenkins
 	
 	# Get the initial admin password
