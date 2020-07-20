@@ -14,7 +14,7 @@
     - name: Use Java 8 on Debian/Ubuntu.
       set_fact:
         java_packages:
-          - openjdk-8-jdk
+          - openjdk-11-jdk
       when: ansible_os_family == 'Debian'
 
   roles:
