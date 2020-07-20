@@ -1,11 +1,11 @@
-Welcome to DevSecOps Studio Project
+Welcome to ascdso-studio Project
 ===================
 
 [![Build Status](https://travis-ci.org/hysnsec/DevSecOps-Studio.svg?branch=master)](https://travis-ci.org/hysnsec/DevSecOps-Studio)
 
-DevSecOps Studio is one of its kind, self contained DevSecOps environment/distribution to help individuals in learning DevSecOps concepts. It takes lots of efforts to setup the environment for training/demos and more often, its error prone when done manually. DevSecOps Studio is easy to get started, mostly automatic and battle tested during our Practical DevSecOps Courses at https://www.practical-devsecops.com/courses-and-certifications/
+ascdso-studio is one of its kind, self contained DevSecOps environment/distribution to help individuals in learning DevSecOps concepts. It takes lots of efforts to setup the environment for training/demos and more often, its error prone when done manually. ascdso-studio is easy to get started, mostly automatic and battle tested during our Practical DevSecOps Courses at https://www.practical-devsecops.com/courses-and-certifications/
 
-DevSecOps Studio project aims to reduce the time to bootstrap the environment and help you in concentrating on learning/teaching DevSecOps practices with the following features.
+ascdso-studio project aims to reduce the time to bootstrap the environment and help you in concentrating on learning/teaching DevSecOps practices with the following features.
 
 1. Easy to setup environment with just one command “vagrant up”
 2. Teaches Security as Code, Compliance as Code, Infrastructure as Code
@@ -25,7 +25,7 @@ DevSecOps Studio project aims to reduce the time to bootstrap the environment an
 	* [Mac OS X](#macos-optional)
 	* [Linux](#linux)
 	* [Windows](#windows-optional)
-* [DevSecOps Studio Installation](#installation)
+* [ascdso-studio Installation](#installation)
 * [What's included in the environment](#whats-included-in-the-environment)
 * [How to use the setup](#how-to-use-the-setup)
 * [Todo Features](#todo-features)
@@ -50,7 +50,7 @@ $ vagrant up
 ```
 
 
-Go grab some coffee while DevSecOps Studio does its job.
+Go grab some coffee while ascdso-studio does its job.
 
 Yes, that's it, you just setup entire DevSecOps environment with three commands :)
 
@@ -62,9 +62,9 @@ Go ahead and read Practical DevSecOps Lessons on the [wiki](https://github.com/h
 
 ### Details
 
-DevSecOps Studio uses `vagrant`, `virtualbox` and `ansible` to setup the lab environment. You can visit the vendor's website to download the above software for on Windows/Linux/macOS.
+ascdso-studio uses `vagrant`, `virtualbox` and `ansible` to setup the lab environment. You can visit the vendor's website to download the above software for on Windows/Linux/macOS.
 
-DevSecOps Studio simulates the environment presented below.
+ascdso-studio simulates the environment presented below.
 
 ![](images/appsec-pipeline.png)
 
@@ -151,8 +151,13 @@ pip install ansible
 
 ### Windows (optional)
 
+<<<<<<< HEAD
 Easiest solution for windows user is to use DevSecOps Studio Virtualbox Appliance
 1. Download DevSecOps-Studio Appliance (4.45 GB) from [this link](https://drive.google.com/open?id=1b3Z6BLndohpn_2HHcBfPFUpoSx78OKgG) - NOT MAINTAINED.
+=======
+Easiest solution for windows user is to use ascdso-studio Virtualbox Appliance
+1. Download DevSecOps-Studio Appliance (4.45 GB) from [this link](https://drive.google.com/open?id=1b3Z6BLndohpn_2HHcBfPFUpoSx78OKgG)
+>>>>>>> dev
 
 2. Import the above Appliance by following [these step](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html)
 
@@ -245,7 +250,7 @@ Utilities:| Git, Vim, curl, wget,
 
 ## Credits
 
-DevSecOps Studio uses some of the ansible roles from [Jeff](https://github.com/geerlingguy)
+ascdso-studio uses some of the ansible roles from [Jeff](https://github.com/geerlingguy)
 
 ## Who do I talk to?
 

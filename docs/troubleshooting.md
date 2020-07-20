@@ -1,5 +1,5 @@
 # Troubleshooting Guide
-This guide helps you in troubleshooting common errors in DevSecOps Studio.
+This guide helps you in troubleshooting common errors in ascdso-studio.
 
 ## Ansible Galaxy
 
