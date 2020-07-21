@@ -44,8 +44,8 @@
         version: 2.9.6
       - name: ansible-lint
         version: 4.2.0
-      - name: sslyze
-        version: 3.0.8
+      #- name: sslyze
+      #  version: 3.0.8
 
   roles:
     - common
