@@ -19,7 +19,7 @@ gitlab_runner_connect_enable: true
 gitlab_runner_coordinator_cert_path: '/home/vagrant/.ssh/authorized_keys'
 
 # GitLab registration token, keep it empty if you dont want to register it
-gitlab_runner_registration_token: 'juUc2uRzyQPusoTNmQbC'
+gitlab_runner_registration_token: 'qmjQKcBDJRm6e-xRzvMz'
 
 # Runner name (not used, just informatory)
 gitlab_runner_name: '{{ ansible_hostname }}'
