@@ -10,7 +10,7 @@
     ansible_python_interpreter: /usr/bin/python3
 
     gitlab_runner_registration_token: 'qmjQKcBDJRm6e-xRzvMz'
-    gitlab_runner_connect_enable: false
+    gitlab_runner_connect_enable: true
 
     # host entries won't work in docker
     # see https://stackoverflow.com/questions/28327458/how-to-add-my-containers-hostname-to-etc-hosts
