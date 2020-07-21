@@ -9,7 +9,7 @@ gitlab_runner_concurrent: '{{ ansible_processor_cores }}'
 gitlab_runner_check_interval: 0
 
 # GitLab coordinator URL
-gitlab_runner_coordinator_url: 'https://10.0.1.12/'
+gitlab_runner_coordinator_url: 'https://gitlab.local/'
 
 gitlab_runner_connect_enable: true
 
