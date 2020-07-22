@@ -78,14 +78,14 @@ If you are seeing high CPU usage from one of the `logstash` processes, and you'r
 ## Example Playbook
 
     - hosts: search
-    
+
       pre_tasks:
         - name: Use Java 8 on Debian/Ubuntu.
           set_fact:
             java_packages:
-              - openjdk-8-jdk
+              - openjdk-11-jdk
           when: ansible_os_family == 'Debian'
-    
+
       roles:
         - geerlingguy.java
         - geerlingguy.elasticsearch

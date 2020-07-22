@@ -60,7 +60,7 @@ def test_binary_is_present(host, file):
 
 
 @pytest.mark.parametrize('command, regex', [
-  ("sslyze --version", "^2.1.4*")
+  ("sslyze --version", "^3.0.8*")
 ])
 def test_commands(host, command, regex):
     cmd = host.check_output(command)

@@ -5,7 +5,7 @@
   become: yes
 
   vars:
-    gitlab_runner_registration_token: 'juUc2uRzyQPusoTNmQbC'
+    gitlab_runner_registration_token: 'qmjQKcBDJRm6e-xRzvMz'
     gitlab_runner_connect_enable: true
 
     # host entries won't work in docker
@@ -44,7 +44,8 @@
         version: 2.9.6
       - name: ansible-lint
         version: 4.2.0
-      - name: sslyze
+      #- name: sslyze
+      #  version: 3.0.8
 
   roles:
     - common

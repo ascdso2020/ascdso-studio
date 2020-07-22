@@ -49,13 +49,13 @@ For Ubuntu < 16.04:
       tasks:
         - name: installing repo for Java 8 in Ubuntu
   	      apt_repository: repo='ppa:openjdk-r/ppa'
-    
+
     - hosts: server
       roles:
         - role: geerlingguy.java
           when: "ansible_os_family == 'Debian'"
           java_packages:
-            - openjdk-8-jdk
+            - openjdk-11-jdk
 
 ## License
 

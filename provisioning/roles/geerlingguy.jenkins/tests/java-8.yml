@@ -45,5 +45,5 @@
 - name: Set the java_packages variable (Debian).
   set_fact:
     java_packages:
-      - openjdk-8-jdk
+      - openjdk-11-jdk
   when: ansible_distribution == 'Debian'

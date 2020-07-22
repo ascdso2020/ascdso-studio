@@ -9,8 +9,8 @@
 
     ansible_python_interpreter: /usr/bin/python3
 
-    gitlab_runner_registration_token: 'juUc2uRzyQPusoTNmQbC'
-    gitlab_runner_connect_enable: false
+    gitlab_runner_registration_token: 'qmjQKcBDJRm6e-xRzvMz'
+    gitlab_runner_connect_enable: true
 
     # host entries won't work in docker
     # see https://stackoverflow.com/questions/28327458/how-to-add-my-containers-hostname-to-etc-hosts
@@ -48,7 +48,8 @@
         version: 2.9.6
       - name: ansible-lint
         version: 4.2.0
-      - name: sslyze
+      #- name: sslyze
+      #  version: 3.0.8
 
   roles:
     - common
