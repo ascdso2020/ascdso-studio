@@ -10,7 +10,7 @@
 - name: jenkins.local
   box: debian/buster64
   box_version: 10.4.0
-  gui: false
+  gui: true
   ram: 1024
   ip: 10.0.1.11
   ansible: "provisioning/jenkins.yml"
@@ -18,7 +18,7 @@
 - name: gitlab.local
   box: debian/buster64
   box_version: 10.4.0
-  gui: false
+  gui: true
   ram: 4096
   ip: 10.0.1.12
   ansible: "provisioning/gitlab.yml"
@@ -26,7 +26,7 @@
 - name: gitlab-runner.local
   box: debian/buster64
   box_version: 10.4.0
-  gui: false
+  gui: true
   ram: 1024
   ip: 10.0.1.22
   ansible: "provisioning/gitlab-runner.yml"
@@ -34,7 +34,7 @@
 - name: elk.local
   box: debian/buster64
   box_version: 10.4.0
-  gui: false
+  gui: true
   ram: 4096
   ip: 10.0.1.23
   ansible: "provisioning/elk.yml"
