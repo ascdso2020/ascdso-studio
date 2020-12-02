@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # vagrant 2.2.14
+=======
+# vagrant 2.2.13
+>>>>>>> c39f32879c22175f47b61840a104c246ce1d4cd1
 # brew install vagrant
 # VirtualBox 6.1.6
 # VirtualBox Extension Pack 6.1.6
