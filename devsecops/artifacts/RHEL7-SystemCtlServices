@@ -1,0 +1,65 @@
+UNIT                                          LOAD   ACTIVE SUB     DESCRIPTION
+abrt-oops.service                             loaded active running ABRT kernel log watcher
+abrt-xorg.service                             loaded active running ABRT Xorg log watcher
+abrtd.service                                 loaded active running ABRT Automated Bug Reporting Tool
+accounts-daemon.service                       loaded active running Accounts Service
+alsa-state.service                            loaded active running Manage Sound Card State (restore and store)
+atd.service                                   loaded active running Job spooling tools
+auditd.service                                loaded active running Security Auditing Service
+avahi-daemon.service                          loaded active running Avahi mDNS/DNS-SD Stack
+bolt.service                                  loaded active running Thunderbolt system service
+chef-manage-runsvdir-start.service            loaded active running chef-manage Runit Process Supervisor
+chronyd.service                               loaded active running NTP client/server
+colord.service                                loaded active running Manage, Install and Generate Color Profiles
+containerd.service                            loaded active running containerd container runtime
+crond.service                                 loaded active running Command Scheduler
+cups.service                                  loaded active running CUPS Printing Service
+dbus.service                                  loaded active running D-Bus System Message Bus
+docker.service                                loaded active running Docker Application Container Engine
+firewalld.service                             loaded active running firewalld - dynamic firewall daemon
+fwupd.service                                 loaded active running Firmware update daemon
+gdm.service                                   loaded active running GNOME Display Manager
+gssproxy.service                              loaded active running GSSAPI Proxy Daemon
+irqbalance.service                            loaded active running irqbalance daemon
+jenkins.service                               loaded active running LSB: Jenkins Automation Server
+jira.service                                  loaded active running (null)
+ksmtuned.service                              loaded active running Kernel Samepage Merging (KSM) Tuning Daemon
+libstoragemgmt.service                        loaded active running libstoragemgmt plug-in server daemon
+libvirtd.service                              loaded active running Virtualization daemon
+lvm2-lvmetad.service                          loaded active running LVM2 metadata daemon
+mcelog.service                                loaded active running Machine Check Exception Logging Daemon
+ModemManager.service                          loaded active running Modem Manager
+NetworkManager.service                        loaded active running Network Manager
+packagekit.service                            loaded active running PackageKit Daemon
+polkit.service                                loaded active running Authorization Manager
+postfix.service                               loaded active running Postfix Mail Transport Agent
+private_chef-runsvdir-start.service           loaded active running private_chef Runit Process Supervisor
+rhnsd.service                                 loaded active running LSB: Starts the Spacewalk Daemon
+rhsmcertd.service                             loaded active running Enable periodic update of entitlement certificates.
+rngd.service                                  loaded active running Hardware RNG Entropy Gatherer Daemon
+rsyslog.service                               loaded active running System Logging Service
+rtkit-daemon.service                          loaded active running RealtimeKit Scheduling Policy Service
+smartd.service                                loaded active running Self Monitoring and Reporting Technology (SMART) Daemon
+snap.deluge-lukewh.deluge-web-service.service loaded active running Service for snap application deluge-lukewh.deluge-web-service
+snap.deluge-lukewh.deluged-service.service    loaded active running Service for snap application deluge-lukewh.deluged-service
+snap.plexmediaserver.plexmediaserver.service  loaded active running Service for snap application plexmediaserver.plexmediaserver
+snapd.service                                 loaded active running Snap Daemon
+sshd.service                                  loaded active running OpenSSH server daemon
+systemd-journald.service                      loaded active running Journal Service
+systemd-logind.service                        loaded active running Login Service
+systemd-udevd.service                         loaded active running udev Kernel Device Manager
+teamviewerd.service                           loaded active running TeamViewer remote control daemon
+tuned.service                                 loaded active running Dynamic System Tuning Daemon
+udisks2.service                               loaded active running Disk Manager
+upower.service                                loaded active running Daemon for power management
+vgauthd.service                               loaded active running VGAuth Service for open-vm-tools
+vmtoolsd.service                              loaded active running Service for virtual machines hosted on VMware
+vmware-tools.service                          loaded active running SYSV: Manages the services needed to run VMware software
+wpa_supplicant.service                        loaded active running WPA Supplicant daemon
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+57 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.
